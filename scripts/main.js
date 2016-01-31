@@ -61,7 +61,7 @@ $("#ButtonSet").click(function(){
 })
 
 //I'm too lazy, I just want to copy codes..
-$("#retry").click(function(){
+$("#Retry").click(function(){
   var a = 10 * Math.random();
   while(a > 8) {
     var a = 10 * Math.random();
@@ -99,5 +99,8 @@ $("#retry").click(function(){
     default:
       break;
   }
+})
 
+$("#Share").click(function(){
+  $("#Komuita").css("z-index",100);
 })

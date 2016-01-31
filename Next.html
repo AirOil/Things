@@ -5,9 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <style>
-    body{
+    #Main{
       background: url(imgs/bg.png) no-repeat #E8DFD0;
     	background-size: cover;
+      margin: 0;
+    	width: 100%;
+    	height: 100%;
     }
 
     html, body{
@@ -58,9 +61,19 @@
       position: fixed;
       cursor: pointer;
     }
+
+    #Komuita{
+      background-color:#000;
+      width:100%;
+      height:100%;
+      position: absolute;
+      opacity: 0.5;
+      z-index: -1;
+    }
     </style>
 </head>
 <body>
+  <div id = "Komuita"></div>
   <div id = "Main">
     <!-- in order use css3 add translation -->
       <div id = "Result">
@@ -71,7 +84,8 @@
       <div id = "ButtonSet">
       </div>
   </div>
-
+  <div id = "Add">
+  </div>
 </body>
   <!-- lib from CDNjs-->
   <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
