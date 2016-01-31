@@ -23,21 +23,50 @@
     	height: 23%;
     	margin: 0 auto;
     	position: fixed;
-    	bottom: 10%;
+    	bottom: 1%;
       left: 10%;
     	text-align: center;
     	color: #666;
     	line-height: 180px;
     	cursor: pointer;
+      z-index: 12;
     }
 
+    #Result{
+      display: none;
+    }
+    #ResultImage{
+      width: 90%;
+      padding-left: 5%;
+      padding-top: 20%;
+      z-index: 1;
+      position: fixed;
+    }
+    #Retry{
+      width: 50%;
+      margin-left: 23%;
+      margin-top: 115%;
+      z-index: 1;
+      position: fixed;
+      cursor: pointer;
+    }
+    #Share{
+      width: 88%;
+      margin-left: 6%;
+      margin-top: 129%;
+      z-index: 1;
+      position: fixed;
+      cursor: pointer;
+    }
     </style>
 </head>
 <body>
   <div id = "Main">
     <!-- in order use css3 add translation -->
-      <div id = "Result" style="display:none">
-        <img src = "" id = "ResultImage">
+      <div id = "Result">
+        <img id = "ResultImage">
+        <img id = "Retry" src = "imgs/Results/retry.png">
+        <img id = "Share" src = "imgs/Results/share.png">
       </div>
       <div id = "ButtonSet">
       </div>
